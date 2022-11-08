@@ -3,15 +3,35 @@
 
 % Packages
 \usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
 
+% Header stuff
+\pagestyle{fancy}
+
+% Document
 \title{
 	{Project Proposal}
 }
+\author{Connor Keevill}
 
-% Document
 \begin{document}
-\maketitle
+	\maketitle
 
+	\pagebreak
+	\tableofcontents
+	\pagebreak
 
+	\section[Problem]{The Problem}\label{sec:the-problem}
+	\input{sections/the-problem.tex}
+
+	\section{Requirements}\label{sec:requirements}
+	\input{sections/requirements.tex}
+
+	\section{Project Plan}\label{sec:project-plan}
+	\input{sections/project-plan.tex}
+
+	\section{Resources}\label{sec:resources}
+	\input{sections/resources.tex}
 
 \end{document}
