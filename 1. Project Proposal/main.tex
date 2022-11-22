@@ -4,14 +4,12 @@
 % Packages
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{fancyhdr}
-
-% Header stuff
-\pagestyle{fancy}
+\usepackage[margin=1in]{geometry}
 
 % Document
 \title{
-	{Project Proposal}
+	{3D Reconstruction of Dynamic Scenes} \\[1ex]
+	\large Project Proposal
 }
 \author{Connor Keevill}
 
@@ -22,16 +20,21 @@
 	\tableofcontents
 	\pagebreak
 
+	\twocolumn
+
 	\section[Problem]{The Problem}\label{sec:the-problem}
-	\input{sections/the-problem.tex}
+	\input{sections/the-problem}
 
 	\section{Requirements}\label{sec:requirements}
-	\input{sections/requirements.tex}
+	\input{sections/requirements}
 
 	\section{Project Plan}\label{sec:project-plan}
-	\input{sections/project-plan.tex}
+	\input{sections/project-plan}
 
 	\section{Resources}\label{sec:resources}
-	\input{sections/resources.tex}
+	\input{sections/resources}
 
+	\bibliography{Papers/dissertation}
+	\bibliographystyle{plain}
+	
 \end{document}
