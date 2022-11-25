@@ -5,6 +5,9 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[margin=1in]{geometry}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\graphicspath{{./images/}}
 
 % Document
 \title{
@@ -22,8 +25,8 @@
 
 	\twocolumn
 
-	\section[Problem]{The Problem}\label{sec:the-problem}
-	\input{sections/the-problem}
+	\section{The Problem}\label{sec:the-problem}
+	\input{sections/the-problem.tex}
 
 	\section{Requirements}\label{sec:requirements}
 	\input{sections/requirements}
@@ -34,7 +37,8 @@
 	\section{Resources}\label{sec:resources}
 	\input{sections/resources}
 
+	\newpage
 	\bibliography{Papers/dissertation}
 	\bibliographystyle{plain}
-	
+
 \end{document}
