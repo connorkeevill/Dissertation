@@ -1,0 +1,25 @@
+Requirements are outlined here with the aim of keeping things very high-level.
+Requirements will be divided into Functional and Non-Functional categories, and further sub-divided into \emph{must}, \emph{should},
+and \emph{may}; indicating requirements which are essential, desirable and beneficial respectively.
+``The system'' here will refer to the subject of the research project.
+
+\subsection{Functional Requirements}\label{subsec:functional-requirements}
+\begin{enumerate}
+	\item The system must generate a 3D mesh from a series of 2D RGB-D images;
+	\item the system must be able to identify \emph{most} ($\ge 50\%$ of) objects which are moving in the scene (e.g.\ humans);
+	\item the system must be able to ``fill in'' holes in surfaces which are occluded by moving objects;
+	\item the system must be able to reconstruct a scene with \emph{most} ($\ge 50\%$ of) moving objects removed;
+	\item the system should perform loop closures to correct camera post estimation stray errors;
+	\item the system should output a scene with colour data;
+	\item the system may be able to detect shadows caused by dynamic objects and exclude them from output texture maps;
+	\item the system may be able to provide real-time feedback to the user capturing the scene.
+\end{enumerate}
+
+\subsection{Non-Functional Requirements}\label{subsec:non-functional-requirements}
+\begin{enumerate}
+	\item The system must run on macOS and Linux;
+	\item The system should be easy to use;
+	\item the system should be reliable and robust to errors;
+	\item the system should run and produce output in a reasonable time;
+	\item the system may run on Windows.
+\end{enumerate}
